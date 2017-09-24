@@ -196,6 +196,7 @@
     where username = #{username}
   </update>
 
+  <!--count1的效率好于count*-->
   <select id="checkPassword" resultType="int" parameterType="map">
     SELECT
     count(1)
